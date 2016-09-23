@@ -49,7 +49,7 @@ for letter in jumble:
     print color.BOLD + letter + color.END,  # the comma omits the new line
 
 # accept the user's guess as input
-guess = raw_input('\nWhat kind of vegetable is jumbled?')
+guess = raw_input('\n\nWhat kind of vegetable is jumbled? ')
 guess = guess.upper()
 
 # the variable, correct, will keep track of whether or not the user input is correct
@@ -58,11 +58,12 @@ guess = guess.upper()
 # while the user's guess is not correct, the loop will continue to prompt the user for another guess
 while correct != 'yes':
     if guess == answer:
-        print ('You are correct! The answer is: ' + answer + '. Thanks for playing!')
+        print ('\nYou are correct! The answer is: ' + answer)
         correct = 'yes'
     else:
         correct = 'no'
-        print ('That is not correct! Double check the scrambled letters and try again.')
-        guess = raw_input('What kind of vegetable is jumbled? ')
+        print ('\nThat is not correct! Double check the scrambled letters and try again.')
+        guess = raw_input('\nWhat kind of vegetable is jumbled? ')
         guess = guess.upper()
 
+print ("\n\nThank you for playing! And, remember...Eat your veggies!!!")
