@@ -1,5 +1,7 @@
 # Phyllis Torres
 # Word Jumble
+# This program provides a list of vegetables that will randomly be selected for scrambling and displayed for the user.
+# The user will then have an opportunity to guess the answer until they guess the correct answer.
 
 # import the random library
 import random
@@ -29,7 +31,7 @@ selection = random.choice(veggies)
 answer = selection
 
 # program title, describe the program and print instructions for the user
-print color.BOLD + '                                                  WORD JUMBLE GAME\n\n' + color.END
+print color.BOLD + '                                 WORD JUMBLE GAME\n\n' + color.END
 print ('\n\nThe topic of this program is Vegetables! This program will randomly select a vegetable and jumble it. ' +
        'Your job, should you choose to accept it, is to unscramble the word and enter the correct answer.\n')
 print ('You do not need to worry about upper or lower case when typing in your answer, just the correct spelling.\n')
